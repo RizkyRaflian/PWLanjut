@@ -1,5 +1,5 @@
-<h2>Tambah Data Sekolah</h2>
-<form method="POST" action="proses/sekolah/save.php"
+<h2>Tambah Data toko</h2>
+<form method="POST" action="proses/toko/save.php"
 enctype="multipart/form-data">
 <table>
 <tr>

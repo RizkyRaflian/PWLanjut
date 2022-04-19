@@ -22,19 +22,19 @@ switch (get('p')) {
 case 'home':
 inc('home');
 break;
-case 'sekolah':
+case 'toko':
 switch (get('m')) {
 case 'home':
-inc('tampilan/sekolah/all');
+inc('tampilan/toko/all');
 break;
 case 'add':
-inc('tampilan/sekolah/add');
+inc('tampilan/toko/add');
 break;
 case 'edit':
-inc('tampilan/sekolah/edit');
+inc('tampilan/toko/edit');
 break;
 default:
-inc('tampilan/sekolah/all');
+inc('tampilan/toko/all');
 break;
 }
 break;

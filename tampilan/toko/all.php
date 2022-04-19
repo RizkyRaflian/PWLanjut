@@ -2,19 +2,19 @@
 $addonq = '';
 if(get("q")!=""){ $addonq = " WHERE nama LIKE
 '%".get('q')."%'"; }
-$hasil = $koneksi->prepare("SELECT * FROM sekolah
+$hasil = $koneksi->prepare("SELECT * FROM toko
 ".$addonq." ORDER BY id DESC");
 $hasil->execute();
 $data = $hasil->fetchAll();
 ?>
-<a class="btn pull-right" href="index.php?p=sekolah&m=add">Tambah
+<a class="btn pull-right" href="index.php?p=toko&m=add">Tambah
 Baru</a>
-<h2>Data Sekolah</h2>
+<h2>Data toko</h2>
 <div style="clear:both;width:200px;margin-right:12px;"
 class="pull-right">
-<form action="index.php?p=sekolah&m=search">
+<form action="index.php?p=toko&m=search">
 <input autocomplete="off" type="hidden" name="p"
-value="sekolah">
+value="toko">
 <input autocomplete="off" type="text" name="q"
 placeHolder="Type and enter to search" value="<?php echo
 (get("q"));?>">
@@ -45,14 +45,14 @@ foreach ($data as $key) {
 <td><img class="img-mini" src="assets/foto/<?php echo
 $key['logo'];?>"></td>
 <td><a target="_blank"
-href="proses/sekolah/pdf.php?id=<?php echo
+href="proses/toko/pdf.php?id=<?php echo
 $key['id'];?>">PDF</a></td>
-<td><a href="proses/sekolah/download.php?id=<?php echo
+<td><a href="proses/toko/download.php?id=<?php echo
 $key['id'];?>">Download</a></td>
-<td><a href="index.php?p=sekolah&m=edit&id=<?php echo
+<td><a href="index.php?p=toko&m=edit&id=<?php echo
 $key['id'];?>">Ubah</a></td>
 <td><a onclick="return confirm('Hapus Data<?php echo
-$key['nama'];?>')" <a href="proses/sekolah/hapus.php?id=<?php
+$key['nama'];?>')" <a href="proses/toko/hapus.php?id=<?php
 echo $key['id'];?>">Hapus</a></td>
 </tr>
 <?php

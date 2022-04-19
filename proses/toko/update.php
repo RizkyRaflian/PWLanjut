@@ -11,12 +11,12 @@ $logo = $_FILES['logo']['name'];
 move_uploaded_file($tmp_logo, "../../assets/foto/".$logo);
 $update_logo = ",`logo`='".$logo."'";
 }
-$simpan = $koneksi->prepare("UPDATE sekolah SET
+$simpan = $koneksi->prepare("UPDATE toko SET
 `nama`='".$nama."',
 `kode_barang`='".$kode_barang."'
 ".$update_logo."
 WHERE
 `id` ='".$id."'");
 $simpan->execute();
-header("location:../../index.php?p=sekolah");
+header("location:../../index.php?p=toko");
 ?>
