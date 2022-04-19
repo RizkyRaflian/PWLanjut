@@ -5,14 +5,14 @@ include 'conf.php';
 <!DOCTYPE html>
 <html>
 <head>
-<title>PDO CRUDSRUD</title>
+<title>TOKO ABC</title>
 <link rel="stylesheet" type="text/css"
 href="assets/css/css.css">
 </head>
 <body>
 <div class="top-gray"></div>
 <div class="header">
-<div class="big-logo">Latihan CRUDSRUD</div>
+<div class="big-logo">ABC</div>
 <?php include 'menu.php';?>
 </div>
 <div class="content"><div class="container">

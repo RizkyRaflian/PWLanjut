@@ -2,7 +2,7 @@
 include '../../conf.php';
 include '../../conn.php';
 $nama = post('nama');
-$alamat = post('alamat');
+$kode_barang = post('kode_barang');
 $logo = "";
 if($_FILES['logo']['tmp_name']!=""){
 $tmp_logo = $_FILES['logo']['tmp_name'];
@@ -10,8 +10,8 @@ $logo = $_FILES['logo']['name'];
 move_uploaded_file($tmp_logo, "../../assets/foto/".$logo);
 }
 $simpan = $koneksi->prepare("INSERT INTO sekolah
-(`nama`,`alamat`,`logo`) VALUES
-('".$nama."','".$alamat."','".$logo."')");
+(`nama`,`kode_barang`,`logo`) VALUES
+('".$nama."','".$kode_barang."','".$logo."')");
 $simpan->execute();
 header("location:../../index.php?p=sekolah");
 ?>

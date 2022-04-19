@@ -41,7 +41,7 @@ foreach ($data as $key) {
 <tr>
 <td><?php echo $i;?></td>
 <td><?php echo $key['nama'];?></td>
-<td><?php echo $key['alamat'];?></td>
+<td><?php echo $key['kode_barang'];?></td>
 <td><img class="img-mini" src="assets/foto/<?php echo
 $key['logo'];?>"></td>
 <td><a target="_blank"

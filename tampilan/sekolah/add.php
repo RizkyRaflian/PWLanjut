@@ -6,9 +6,8 @@ enctype="multipart/form-data">
 <td>Nama</td>
 <td><input type="text" name="nama"></td>
 </tr>
-<tr>
-<td>Alamat</td>
-<td><input type="text" name="alamat"></td>
+<tr>kode_barang</td>
+<td><input type="text" name="kode_barang"></td>
 </tr>
 <tr>
 <td>Logo</td>
